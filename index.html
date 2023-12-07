@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .b {
+        border: 1px solid red;
+        width: 1200px;
+        height: 600px;
+    }
+    
+    .flex {
+        display: flex;
+    }
+    
+    .m {
+        margin: 8px;
+    }
+    
+    .m-r {
+        margin-right: 30px;
+    }
+    
+    .text-20px {
+        font-size: 20px;
+    }
+    
+    body {
+        margin: 0px;
+    }
+    
+    .center {
+        align-items: flex-start;
+    }
+    
+    .hidden {
+        visibility: hidden;
+    }
+    
+    .point {
+        width: 30px;
+        height: 30px;
+    }
+    
+    .yellow {
+        background-color: yellow;
+    }
+    
+    .blue {
+        background-color: blue;
+    }
+    
+    .red {
+        background-color: red;
+    }
+    
+    .pink {
+        background-color: pink;
+    }
+    
+    .green {
+        background-color: green;
+    }
+</style>
+
+<body class="">
+    <div class="flex">
+        <canvas class="b" id="canavas">
+
+        </canvas>
+        <div class="">
+            <div class="flex center">
+                <div class="text-30px m-r ">location</div>
+                <div id="location" class="text-30px">hello</div>
+            </div>
+            <div class="flex center">
+                <div class="text-30px m-r ">location</div>
+                <div id="location1" class="text-30px">hello</div>
+            </div>
+            <div class="flex center m">
+                <div class="text-30px m-r">Draw wall </div>
+                <input type="text" lang="en" size="1" id="Draw" value="q" class="text-30px">
+            </div>
+            <div class="flex center m">
+                <div class="text-30px m-r">Start </div>
+                <input type="text" lang="en" size="1" id="Start" value="w" class="text-30px">
+            </div>
+            <div class="flex center m">
+                <div class="text-30px m-r">Finish</div>
+                <input type="text" lang="en" size="1" id="Finish" value="e" class="text-30px">
+            </div>
+            <div class="flex center m">
+                <div class="text-30px m-r">Remove</div>
+                <input type="text" lang="en" size="1" id="Remove" value="r" class="text-30px">
+            </div>
+            <div class="">
+                <button id="removeAllWall">Xóa tất cả tường</button>
+            </div>
+            <div class="flex center m">
+                <div class="text-30px m-r">Tường</div>
+                <div class="point blue"></div>
+            </div>
+            <div class="flex center m">
+                <div class="text-30px m-r">Start</div>
+                <div class="point red"></div>
+            </div>
+            <div class="flex center m">
+                <div class="text-30px m-r">Finish</div>
+                <div class="point green"></div>
+            </div>
+            <div class="flex center m">
+                <div class="text-30px m-r">Wait</div>
+                <div class="point yellow"></div>
+            </div>
+            <div class="flex center m">
+                <div class="text-30px m-r">Over</div>
+                <div class="point pink"></div>
+            </div>
+            <div class="">
+                <button id="reset">Khôi phục</button>
+            </div>
+            <div class="">
+                <button id="aStar">Bắt đầu với A*</button>
+            </div>
+
+        </div>
+    </div>
+</body>
+<script src="./function.js"></script>
+<script src="./event.js"></script>
+<script src="./api.js"></script>
+
+</html>
